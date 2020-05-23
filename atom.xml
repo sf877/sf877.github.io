@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sf877.github.io</id>
     <title>Gridea</title>
-    <updated>2020-05-23T00:08:47.711Z</updated>
+    <updated>2020-05-23T01:10:46.874Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sf877.github.io"/>
     <link rel="self" href="https://sf877.github.io/atom.xml"/>
@@ -10,6 +10,76 @@
     <logo>https://sf877.github.io/images/avatar.png</logo>
     <icon>https://sf877.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[我的第一篇博客，记录以下我经常忘记的使用Python虚拟环境的使用]]></title>
+        <id>https://sf877.github.io/post/wo-de-di-yi-pian-bo-ke-ji-lu-yi-xia-wo-jing-chang-wang-ji-de-shi-yong-python-xu-ni-huan-jing-de-shi-yong/</id>
+        <link href="https://sf877.github.io/post/wo-de-di-yi-pian-bo-ke-ji-lu-yi-xia-wo-jing-chang-wang-ji-de-shi-yong-python-xu-ni-huan-jing-de-shi-yong/">
+        </link>
+        <updated>2020-05-23T00:49:28.000Z</updated>
+        <summary type="html"><![CDATA[<p>1、virtualenv:</p>
+<p>virtualenv可用于创建独立的 Python 环境，它会创建一个包含项目所必须要的执行文件。</p>
+<p>安装 virtualenv :</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>1、virtualenv:</p>
+<p>virtualenv可用于创建独立的 Python 环境，它会创建一个包含项目所必须要的执行文件。</p>
+<p>安装 virtualenv :</p>
+<!-- more -->
+<pre><code>pip install virtualenv  或者    pip3 install virtualenv    
+</code></pre>
+<p>virtualenv使用方法:</p>
+<p>如下命令表示在当前目录下创建一个名叫 xxx的目录（虚拟环境），该目录下包含了独立的      Python 运行程序,以及 pip副本用于安装其他的 packge</p>
+<pre><code>    virtualenv xxx
+	当然在创建 xxx 的时候可以选择 Python 解释器,例如：
+	virtualenv -p python路径 xxx
+	
+默认情况下，虚拟环境会依赖系统环境中的 site packages，就是说系统中已经安装好的第三方 package 也会安装在虚拟环境中,
+如果不想依赖这些 package，那么可以加上参数 --no-site-packages 建立虚拟环境
+	virtualenv --no-site-packages [虚拟环境名称]
+</code></pre>
+<p>启动虚拟环境</p>
+<pre><code>    cd ENV
+	source ./bin/activate
+	
+	注意此时命令行会多一个(ENV)，ENV为虚拟环境名称，接下来所有模块都只会安装到这个虚拟的环境中去
+</code></pre>
+<p>退出虚拟环境</p>
+<pre><code>    deactivate
+</code></pre>
+<p>如果想删除虚拟环境，那么直接运行rm -rf venv/命令即可。</p>
+<p>在虚拟环境安装 Python packages</p>
+<pre><code>    Virtualenv 附带有 pip 安装工具，因此需要安装的 packages 可以直接运行：
+    
+    pip install [套件名称]
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+</code></pre>
+<p>2、Virtualenvwrapper:<br>
+Virtualenvwrapper 是一个虚拟环境管理工具，它能够管理创建的虚拟环境的位置，并能够方便地查看虚拟环境的名称以及切换到指定的虚拟环境。</p>
+<p>安装（确保virtualenv已经安装）:</p>
+<pre><code>pip install virtualenvwrapper 或者 pip3 install virtualenvwrapper
+
+注：安装需要在非虚拟环境下进行
+</code></pre>
+<p>创建虚拟机:</p>
+<pre><code>mkvirtualenv 虚拟环境名称
+
+创建虚拟环境完成后，会自动切换到创建的虚拟环境中
+</code></pre>
+<p>指定虚拟机的 python 版本:</p>
+<pre><code>mkvirtualenv 虚拟环境名称 -p python路径
+</code></pre>
+<p>列出虚拟环境列表:</p>
+<pre><code>workon 或者 lsvirtualenv		
+</code></pre>
+<p>启动/切换虚拟环境:</p>
+<pre><code>使用 workon [virtual-name] 即可切换到对应的虚拟环境
+</code></pre>
+<p>删除虚拟环境:</p>
+<pre><code>rmvirtualenv [虚拟环境名称]
+</code></pre>
+<p>离开虚拟环境，和 virutalenv 一样的命令:</p>
+<pre><code>deactivate</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://sf877.github.io/post/hello-gridea/</id>
