@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sf877.github.io</id>
     <title>Gridea</title>
-    <updated>2020-05-23T01:10:46.874Z</updated>
+    <updated>2020-05-23T01:11:58.305Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sf877.github.io"/>
     <link rel="self" href="https://sf877.github.io/atom.xml"/>
@@ -11,16 +11,18 @@
     <icon>https://sf877.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[我的第一篇博客，记录以下我经常忘记的使用Python虚拟环境的使用]]></title>
+        <title type="html"><![CDATA[我的第一篇博客，记录一下我经常忘记的Python虚拟环境的使用]]></title>
         <id>https://sf877.github.io/post/wo-de-di-yi-pian-bo-ke-ji-lu-yi-xia-wo-jing-chang-wang-ji-de-shi-yong-python-xu-ni-huan-jing-de-shi-yong/</id>
         <link href="https://sf877.github.io/post/wo-de-di-yi-pian-bo-ke-ji-lu-yi-xia-wo-jing-chang-wang-ji-de-shi-yong-python-xu-ni-huan-jing-de-shi-yong/">
         </link>
         <updated>2020-05-23T00:49:28.000Z</updated>
-        <summary type="html"><![CDATA[<p>1、virtualenv:</p>
+        <summary type="html"><![CDATA[<p>😁<br>
+1、virtualenv:</p>
 <p>virtualenv可用于创建独立的 Python 环境，它会创建一个包含项目所必须要的执行文件。</p>
 <p>安装 virtualenv :</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>1、virtualenv:</p>
+        <content type="html"><![CDATA[<p>😁<br>
+1、virtualenv:</p>
 <p>virtualenv可用于创建独立的 Python 环境，它会创建一个包含项目所必须要的执行文件。</p>
 <p>安装 virtualenv :</p>
 <!-- more -->
